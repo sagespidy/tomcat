@@ -54,6 +54,7 @@ echo -e " \n\n\n "
 echo " Please enter the name of user: "
 # Take input from user
 
+usr_name=
 
 
 # Make a new user and  set his Password
