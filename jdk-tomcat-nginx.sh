@@ -36,9 +36,9 @@ echo 'export PATH=$JAVA_HOME/bin:$PATH' >> /etc/bash.bashrc
 
 # Install tomcat
 cd /opt
-http://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.28/bin/apache-tomcat-8.5.28.tar.gz
-tar -xvzf apache-tomcat-8.5.28.tar.gz
-mv apache-tomcat-8.5.28 tomcat
+wget http://www-eu.apache.org/dist/tomcat/tomcat-8/v8.5.30/bin/apache-tomcat-8.5.30.tar.gz
+tar -xvzf apache-tomcat-8.5.30.tar.gz
+mv apache-tomcat-8.5.30 tomcat
 
 echo 'export CATALINA_OPTS="$CATALINA_OPTS -Xms512m"' > /opt/tomcat/bin/setenv.sh
 echo 'export CATALINA_OPTS="$CATALINA_OPTS -Xmx856m"' >> /opt/tomcat/bin/setenv.sh
@@ -54,7 +54,7 @@ echo -e " \n\n\n "
 echo " Please enter the name of user: "
 # Take input from user
 
-usr_name=
+usr_name=momentor
 
 
 # Make a new user and  set his Password
